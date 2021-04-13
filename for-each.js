@@ -7,7 +7,9 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const names = arr.map(pet => pet.name)
+    
+    return names;
 }
 
 /*
