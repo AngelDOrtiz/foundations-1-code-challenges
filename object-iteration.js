@@ -19,8 +19,10 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
-}
+    const scream = Object.keys(someObject).forEach(keys => {
+        scream[keys.toUpperCase()] = someObject[keys]})
+        return scream
+    }
 
 /*
 Output:
